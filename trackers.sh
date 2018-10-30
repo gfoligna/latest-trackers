@@ -5,7 +5,7 @@
 #set -e
 out_dir=$1
 
-if [ $1 -e ];
+if [ $1 -e ]; then
   out_dir='.'
 fi
 
