@@ -9,7 +9,7 @@ if [ $1 -e ]; then
   out_dir='.'
 fi
 
-curl -s https://torrents.me/tracker-list/?download=latest | sed 's/$/\n/g' > ${out_dir}/trackers_`date +%Y%m%d-%H%M`
+curl -s https://torrents.me/tracker-list/?download=latest > ${out_dir}/trackers_`date +%Y%m%d-%H%M`
 if [ $? = 0 ]; then
   echo 'File created with latest trackers'
 else
