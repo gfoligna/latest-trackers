@@ -1,4 +1,4 @@
-name: CI
+name: get_tracker_list
 
 on:
     schedule:
@@ -16,6 +16,6 @@ jobs:
       run: pwd
     - name: Get latest tracker list and compress
       run: |
-        sh ./trackers.sh . trackers.list,
+        bash -c "./trackers.sh . trackers.list",
         gzip ./trackers.list
 
