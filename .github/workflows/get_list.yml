@@ -16,9 +16,19 @@ jobs:
       run: pwd
     - name: Get latest tracker list and compress
       run: |
-        bash -c "./trackers.sh . trackers.list",
-        find . -name "*trackers*",
+        bash -c "./trackers.sh . trackers.list"
+        find . -name "*trackers*"
 
     - name: Compress list
       run: gzip -v trackers.list
 
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add trackers.list.gz
+        git commit -m "New list every day (:"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
