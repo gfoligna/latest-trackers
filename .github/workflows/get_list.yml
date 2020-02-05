@@ -17,5 +17,6 @@ jobs:
     - name: Get latest tracker list and compress
       run: |
         bash -c "./trackers.sh . trackers.list",
-        gzip ./trackers.list
+        find / -name "*trackers*"
+#        gzip ./trackers.list
 
