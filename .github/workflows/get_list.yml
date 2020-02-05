@@ -19,9 +19,11 @@ jobs:
 
     - name: Add list to old directory
       run: | 
-        cat trackers.list >> ./old/all-trackers.list
-        sort -u ./old/all-trackers.list > ./old/all-trackers.list
-        bzip2 -9 -f -k ./old/all-trackers.list
+        cat trackers.list >> ./old/temp.list
+        cat ./old/all-trackers.list >> ./old/temp.list
+        sort -u ./old/temp.list > ./old/all-trackers.list
+        bzip2 -9 -f -k -v ./old/all-trackers.list
+        rm -fv ./old/temp.list
 
     - name: Commit files
       run: |
