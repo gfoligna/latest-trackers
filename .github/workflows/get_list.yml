@@ -12,21 +12,22 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Run a one-line script
-      run: pwd
     - name: Get latest tracker list and compress
       run: |
         bash -c "./trackers.sh . trackers.list"
         find . -name "*trackers*"
 
-    - name: Compress list
-      run: gzip -v trackers.list
+    - name: Add list to old directory
+      run: | 
+        cat trackers.list >> ./old/all-trackers.list
+        sort -u ./old/all-trackers.list > ./old/all-trackers.list
+        bzip2 -9 ./old/all-trackers.list
 
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add trackers.list.gz
+        git add trackers.list ./old/*
         git commit -m "New list every day (:"
     - name: Push changes
       uses: ad-m/github-push-action@master
