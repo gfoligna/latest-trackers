@@ -21,7 +21,7 @@ jobs:
       run: | 
         cat trackers.list >> ./old/all-trackers.list
         sort -u ./old/all-trackers.list > ./old/all-trackers.list
-        bzip2 -9 ./old/all-trackers.list
+        bzip2 -9 -f -k ./old/all-trackers.list ./old/all-trackers.list.bz2
 
     - name: Commit files
       run: |
