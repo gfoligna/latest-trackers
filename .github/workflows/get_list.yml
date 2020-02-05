@@ -1,0 +1,21 @@
+name: CI
+
+on:
+    schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '15 9 * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      run: pwd
+    - name: Get latest tracker list and compress
+      run: |
+        sh ./trackers.sh . trackers.list,
+        gzip ./trackers.list
+
