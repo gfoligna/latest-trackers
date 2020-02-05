@@ -18,5 +18,7 @@ jobs:
       run: |
         bash -c "./trackers.sh . trackers.list",
         find . -name "*trackers*",
-        gzip -v trackers.list
+
+    - name: Compress list
+      run: gzip -v trackers.list
 
