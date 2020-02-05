@@ -6,11 +6,11 @@
 out_dir=$1
 filename=$2
 
-if [[ $1 -e ]]; then
+if [[ -z $1 ]]; then
   out_dir='.'
 fi
 
-if [[ $2 -e ]]; then
+if [[ -z $2 ]]; then
   filename="trackers_`date +%Y%m%d-%H%M`"
 fi
 
