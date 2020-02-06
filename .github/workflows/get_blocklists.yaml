@@ -1,0 +1,40 @@
+name: get_blocklist_list
+
+on:
+    schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/5 * * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Get all I-Blocklists free lists
+      run: |
+        mkdir ./blocklists/tmp
+        for URL in `cat ./blocklists/all-free-iblocklists`; do wget -q -O ./blocklists/tmp/"$(echo ${URL} | sed -nr 's/.*list=([a-z]*).*/\1/p').gz" ${URL}; done
+
+
+    - name: Merge all lists into one and remove duplicates
+      run: | 
+        zcat ./blocklists/tmp/*.gz >> ./blocklists/tmp/all-lists
+        sort -u ./blocklists/tmp/all-lists > ./blocklists/i-block.list
+        gzip -9 -f ./blocklists/i-block.list
+
+    - name: Cleanup
+      run: | 
+        rm -rfv ./blocklists/tmp
+
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add ./blocklists/i-block.list.gz
+        git commit -m "New list every day (:"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
