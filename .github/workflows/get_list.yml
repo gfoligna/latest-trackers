@@ -3,7 +3,7 @@ name: get_tracker_list
 on:
     schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '45 * * * *'
+    - cron:  '45 12 * * *'
 
 jobs:
   build:
