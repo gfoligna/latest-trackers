@@ -14,7 +14,7 @@ if [[ -z $2 ]]; then
   filename="trackers_`date +%Y%m%d-%H%M`"
 fi
 
-curl -s -L https://torrents.me/tracker-list/?download=latest > ${out_dir}/${filename}
+curl -s -L https://torrents.io/torrent-racker-list/?download=latest > ${out_dir}/${filename}
 if [[ $? = 0 ]]; then
   echo 'File created with latest trackers'
 else
