@@ -17,19 +17,11 @@ jobs:
         bash -c "./trackers.sh . trackers.list"
         find . -name "*trackers*"
 
-    - name: Add list to old directory
-      run: | 
-        cat trackers.list >> ./old/temp.list
-        cat ./old/all-trackers.list >> ./old/temp.list
-        sort -u ./old/temp.list > ./old/all-trackers.list
-        bzip2 -9 -f -k -v ./old/all-trackers.list
-        rm -fv ./old/temp.list
-
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add trackers.list ./old/*
+        git add trackers.list
         git commit -m "New list every day (:"
     - name: Push changes
       uses: ad-m/github-push-action@master
