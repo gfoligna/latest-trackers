@@ -1,345 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>StackPath</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Page not found &ndash; Torrents</title>
+	
+<!-- This site is optimized with the Yoast SEO plugin v11.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="noindex,follow"/>
+<!-- / Yoast SEO plugin. -->
 
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
-
-    html {
-      -ms-overflow-style: -ms-autohiding-scrollbar;
-      -webkit-text-size-adjust: 100%;
-      font-size: 16px;
-      overflow-x: hidden;
-      overflow-y: visible;
-    }
-
-    body {
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
-      background: #fafafa;
-      color: #888888;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      line-height: 1.5;
-      margin: 0;
-      min-width: 20rem;
-      overflow-x: hidden;
-      overflow-y: visible;
-      text-align: center;
-    }
-
-    p {
-      margin: 0;
-      padding: 0;
-    }
-
-    a {
-      color: #1a3b8e;
-      text-decoration: none;
-    }
-
-    hr {
-      background: #e6e6e6;
-      border: 0;
-      height: 0.063rem;
-      margin: 1.5rem -1.5rem;
-    }
-
-    p:not(:last-child) {
-      margin-bottom: 1rem;
-    }
-
-    h1 {
-      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxvZ28iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyMDAgNTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIwMCA1NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQoJLnN0MXtmaWxsOnVybCgjU1ZHSURfMV8pO30KCS5zdDJ7ZmlsbDp1cmwoI1NWR0lEXzJfKTt9Cgkuc3Qze29wYWNpdHk6MC41O30KPC9zdHlsZT4KPGc+Cgk8Zz4KCQk8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjU2Ii8+CgkJPGc+CgkJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik04OS4zMjMsMzEuMzYybDAuMDMsMC4wOTJjLTAuMTAyLDIuNjM5LTAuODc2LDQuNjUxLTIuMzIyLDYuMDQzYy0xLjQ0NiwxLjM5LTMuNTQ0LDIuMDg1LTYuMjkyLDIuMDg1CgkJCQljLTIuNzU5LDAtNS4wMDQtMC44NTUtNi43My0yLjU2NWMtMS43MjgtMS43MDktMi41OS0zLjkzLTIuNTktNi42NTh2LTQuNjk2YzAtMi43MjEsMC44MjktNC45MzYsMi40ODktNi42NTMKCQkJCWMxLjY2MS0xLjcxNCwzLjgyLTIuNTcyLDYuNDc4LTIuNTcyYzIuODIsMCw0Ljk3NywwLjcxNyw2LjQ2OCwyLjE0OGMxLjQ5MywxLjQzMSwyLjMzNiwzLjQ2NywyLjUzLDYuMTAzbC0wLjAzMSwwLjA5M2gtNS4wNDMKCQkJCWMtMC4wNzEtMS40NjItMC4zOTYtMi41NS0wLjk3My0zLjI2Yy0wLjU3OS0wLjcxMS0xLjU2Mi0xLjA2Ni0yLjk1MS0xLjA2NmMtMS4xNzYsMC0yLjEwMSwwLjQ3Ni0yLjc3NSwxLjQyOQoJCQkJYy0wLjY3NCwwLjk1NC0xLjAxMSwyLjIwMi0xLjAxMSwzLjc0NnY0LjcyOWMwLDEuNTU1LDAuMzY4LDIuODEyLDEuMTA0LDMuNzY5YzAuNzM2LDAuOTU4LDEuNzQ4LDEuNDM3LDMuMDM2LDEuNDM3CgkJCQljMS4yNDYsMCwyLjEzLTAuMzM0LDIuNjUxLTEuMDA1YzAuNTIyLTAuNjY5LDAuODE5LTEuNzM0LDAuODkxLTMuMTk4SDg5LjMyM3oiLz4KCQkJPHBhdGggY2xhc3M9InN0MCIgZD0iTTI5LjEzMSwzMy4yNzVjMC0wLjc5My0wLjI2MS0xLjQwNi0wLjc4MS0xLjgzOWMtMC41MjEtMC40MzItMS40NTctMC44OS0yLjgwNi0xLjM3NQoJCQkJYy0yLjgyLTAuODk2LTQuOTEtMS44NTUtNi4yNjktMi44ODJjLTEuMzU5LTEuMDI0LTIuMDM5LTIuNTA1LTIuMDM5LTQuNDQxYzAtMS44ODUsMC44MDktMy40MSwyLjQzLTQuNTczCgkJCQljMS42Mi0xLjE2NSwzLjY3NS0xLjc0Nyw2LjE3LTEuNzQ3YzIuNDczLDAsNC40OTksMC42NDEsNi4wNzgsMS45MjNjMS41NzgsMS4yODIsMi4zNDIsMi45MzQsMi4yOTEsNC45NTJsLTAuMDMxLDAuMDkzaC01LjAyNwoJCQkJYzAtMC44OTUtMC4zMDItMS42MjYtMC45MDYtMi4xODZjLTAuNjAzLTAuNTYxLTEuNDM1LTAuODQyLTIuNDk5LTAuODQyYy0xLjA0MiwwLTEuODYsMC4yMzItMi40NTMsMC42OTYKCQkJCWMtMC41OTMsMC40NjQtMC44ODgsMS4wMzUtMC44ODgsMS43MTVjMCwwLjY2LDAuMjk4LDEuMTg4LDAuODk2LDEuNTg1YzAuNTk5LDAuMzk2LDEuNzE5LDAuODkzLDMuMzY0LDEuNDkxCgkJCQljMi41MzUsMC43NjIsNC40NDQsMS42OTksNS43MjYsMi44MTFjMS4yODIsMS4xMTIsMS45MjMsMi42NDMsMS45MjMsNC41ODljMCwxLjk3Ny0wLjc2MywzLjUyNS0yLjI5MSw0LjY0MwoJCQkJYy0xLjUyNywxLjExNy0zLjU1NCwxLjY3Ni02LjA3OCwxLjY3NmMtMi41MzUsMC00LjcyNi0wLjY0MS02LjU3NS0xLjkyM2MtMS44NS0xLjI4My0yLjc1LTMuMTMtMi42OTgtNS41MzlsMC4wMzEtMC4wOTNoNS4wNDMKCQkJCWMwLDEuMjk3LDAuMzQ3LDIuMjI1LDEuMDQyLDIuNzhjMC42OTUsMC41NTcsMS43NDgsMC44MzQsMy4xNTgsMC44MzRjMS4wNzQsMCwxLjg3Mi0wLjIxNiwyLjQtMC42NDgKCQkJCUMyOC44NjgsMzQuNTQxLDI5LjEzMSwzMy45NzQsMjkuMTMxLDMzLjI3NSIvPgoJCQk8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjM1LjUyMSwxNi41NjcgMzUuNTIxLDIxLjAxNiA0MS42MjksMjEuMDE2IDQxLjYyOSwzOS4zNyA0Ni4yNjYsMzkuMzcgNDYuMjY2LDIxLjAxNiA1Mi4zMzcsMjEuMDE2IAoJCQkJNTIuMzM3LDE2LjU2NyAJCQkiLz4KCQkJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxNDYuNTcyLDE2LjU2NyAxNDYuNTcyLDIxLjAxNiAxNTIuNjgxLDIxLjAxNiAxNTIuNjgxLDM5LjM3IDE1Ny4zMTksMzkuMzcgMTU3LjMxOSwyMS4wMTYgCgkJCQkxNjMuMzg4LDIxLjAxNiAxNjMuMzg4LDE2LjU2NyAJCQkiLz4KCQkJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxNzguNzM0LDE2LjU2NyAxNzguNzM0LDI1LjcyOCAxNzEuMTkyLDI1LjcyOCAxNzEuMTkyLDE2LjU2NyAxNjYuNTkzLDE2LjU2NyAxNjYuNTkzLDM5LjM3IAoJCQkJMTcxLjE5MiwzOS4zNyAxNzEuMTkyLDMwLjE3MyAxNzguNzM0LDMwLjE3MyAxNzguNzM0LDM5LjM3IDE4My4zMzMsMzkuMzcgMTgzLjMzMywxNi41NjcgCQkJIi8+CgkJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMTcuNzE5LDMxLjU0OXY3LjgxNWgtNS4yNjhWMTYuNTYxaDguNDc3YzIuNjgzLDAsNC44MTIsMC42OTIsNi4zODcsMi4wNzYKCQkJCWMxLjU3NCwxLjM4NCwyLjM2MiwzLjE5MiwyLjM2Miw1LjQyN2MwLDIuMjQ0LTAuNzg5LDQuMDU0LTIuMzYyLDUuNDI2Yy0xLjU3NSwxLjM3NC0zLjcwNCwyLjA2LTYuMzg3LDIuMDZIMTE3LjcxOXoKCQkJCSBNMTE3LjcxOSwyNy40NzhoMy4yMDljMS4xNCwwLDIuMDA3LTAuMzE1LDIuNjAzLTAuOTQ3YzAuNTk2LTAuNjMxLDAuODk0LTEuNDQzLDAuODk0LTIuNDM0YzAtMS4wMTQtMC4yOTgtMS44NDMtMC44OTQtMi40OTIKCQkJCWMtMC41OTUtMC42NDYtMS40NjItMC45Ny0yLjYwMy0wLjk3aC0zLjIwOVYyNy40Nzh6Ii8+CgkJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMDkuMjQ5LDM4LjMwMWMtMi42Ni0zLjA4LTYuODE2LTcuODU1LTguOTg5LTEwLjQwOGw4Ljk4OS0xMC40NDV2LTAuODgxaC0xLjQxOGgtMy43OTkKCQkJCWMtMi40MTMsMi44NTEtNC43OSw1LjU4OS03LjIwMyw4LjQzNnYtOC40MzZoLTQuNlYzOS4zN2g0LjZ2LTguNDM3bDcuMjQsOC40MzdoMy43NjNoMS40MThWMzguMzAxeiIvPgoJCQk8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjEzNS44NSwxNi41NjYgMTI4LjAwNSwzOS4zNjkgMTMyLjkwNywzOS4zNjkgMTQwLjk0LDE2LjU2NiAJCQkiLz4KCQkJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI1OC4xOSwxNi41NjYgNTAuMzQ2LDM5LjM2OSA1NS4yNDgsMzkuMzY5IDYzLjI4MSwxNi41NjYgCQkJIi8+CgkJCTxnPgoJCQkJPGxpbmVhckdyYWRpZW50IGlkPSJTVkdJRF8xXyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSI3NC4wMDczIiB5MT0iMzEuMzQ0MSIgeDI9IjU5Ljc4NjIiIHkyPSIyNi4xNjgiPgoJCQkJCTxzdG9wICBvZmZzZXQ9IjAuMDU1NSIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRkZGRiIvPgoJCQkJCTxzdG9wICBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkZGRkY7c3RvcC1vcGFjaXR5OjAuMiIvPgoJCQkJPC9saW5lYXJHcmFkaWVudD4KCQkJCTxwb2x5Z29uIGNsYXNzPSJzdDEiIHBvaW50cz0iNjMuMjgxLDE2LjU2NyA2MC44MjcsMjMuNTMzIDYzLjI4MSwzMC41NTQgNTguMzUzLDMwLjU1NCA1Ni43ODgsMzQuOTk4IDY0LjY3NiwzNC45OTggCgkJCQkJNjYuMTgzLDM5LjM2OSA3MS4wODYsMzkuMzY5IAkJCQkiLz4KCQkJPC9nPgoJCQk8Zz4KCQkJCTxsaW5lYXJHcmFkaWVudCBpZD0iU1ZHSURfMl8iIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMTUxLjY2NjciIHkxPSIzMS4zNDQxIiB4Mj0iMTM3LjQ0NTYiIHkyPSIyNi4xNjgiPgoJCQkJCTxzdG9wICBvZmZzZXQ9IjAuMDU1NSIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRkZGRiIvPgoJCQkJCTxzdG9wICBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkZGRkY7c3RvcC1vcGFjaXR5OjAuMiIvPgoJCQkJPC9saW5lYXJHcmFkaWVudD4KCQkJCTxwb2x5Z29uIGNsYXNzPSJzdDIiIHBvaW50cz0iMTQwLjk0LDE2LjU2NyAxMzguNDg2LDIzLjUzMyAxNDAuOTQsMzAuNTU0IDEzNi4wMTMsMzAuNTU0IDEzNC40NDcsMzQuOTk4IDE0Mi4zMzUsMzQuOTk4IAoJCQkJCTE0My44NDMsMzkuMzY5IDE0OC43NDYsMzkuMzY5IAkJCQkiLz4KCQkJPC9nPgoJCTwvZz4KCTwvZz4KCTxnIGNsYXNzPSJzdDMiPgoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xODYuNTYyLDE2Ljk0NWgtMC42OTZ2MS44OTVoLTAuNDY5di0xLjg5NWgtMC42ODh2LTAuMzc5aDEuODUzVjE2Ljk0NXoiLz4KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTg3LjQ0LDE2LjU2NWwwLjU4NCwxLjY0OWwwLjU4MS0xLjY0OWgwLjYxNXYyLjI3NGgtMC40N3YtMC42MjJsMC4wNDctMS4wNzNsLTAuNjE0LDEuNjk1aC0wLjMyMQoJCQlsLTAuNjEyLTEuNjkzbDAuMDQ3LDEuMDcydjAuNjIyaC0wLjQ2OXYtMi4yNzRIMTg3LjQ0eiIvPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=);
-      display: block;
-      font: 0/0 a;
-      height: 3.5rem;
-      margin: 0 auto;
-      width: 12.5rem;
-    }
-
-    h2 {
-      color: #000;
-      font-size: 1.25rem;
-      margin: 0 0 1rem 0;
-    }
-
-    input,
-    button {
-      border-radius: 0.25rem;
-      color: inherit;
-      display: block;
-      font-family: inherit;
-      font-size: 0.875rem;
-      font-size: inherit;
-      font-style: inherit;
-      font-weight: inherit;
-      height: 2.5rem;
-      line-height: inherit;
-      margin: 0 auto;
-      outline: none;
-      padding: 0 1rem;
-      text-align: center;
-      text-transform: inherit;
-      width: 9.375rem;
-    }
-
-    input {
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      border: 0.063rem solid #e6e6e6;
-      color: #000;
-      line-height: 2.375rem;
-      margin-bottom: 0.5rem;
-      transition: border-color 300ms ease-in;
-    }
-
-    input:focus {
-      border-color: #1a3b8e;
-    }
-
-    input.is-error {
-      border-color: #f5a3a6;
-    }
-
-    button {
-      -webkit-appearance: button;
-      background: #1a3b8e;
-      border: 0;
-      color: #fff;
-      cursor: pointer;
-      font-weight: 700;
-      line-height: 2.5rem;
-      transition: background 300ms ease-in;
-    }
-
-    button:hover {
-      background: #122963;
-    }
-
-    .loader {
-      -moz-align-items: center;
-      -moz-flex-flow: column nowrap;
-      -ms-flex-align: center;
-      -ms-flex-flow: column nowrap;
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -webkit-flex-flow: column nowrap;
-      align-items: center;
-      background: #fafafa;
-      bottom: 0;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: flex;
-      flex-flow: column nowrap;
-      left: 0;
-      opacity: 0;
-      position: fixed;
-      right: 0;
-      top: 0;
-      transition: opacity 300ms cubic-bezier(0.17, 0.67, 0.83, 0.67), visibility 300ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-      visibility: hidden;
-      z-index: 300;
-    }
-
-    .loader.is-active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .loader__items {
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: flex;
-      margin: auto auto auto auto;
-    }
-
-    .loader__items:not(:last-child) {
-      margin-bottom: 1rem;
-    }
-
-    .loader__items-item {
-      -webkit-animation: loader 1700ms infinite ease-in-out both;
-      animation: loader 1700ms infinite ease-in-out both;
-      background: #1a3b8e;
-      border-radius: 50%;
-      display: block;
-      height: 1rem;
-      width: 1rem
-    }
-
-    .loader__items-item:not(:last-child) {
-      margin-right: 0.313rem
-    }
-
-    .loader__items-item:nth-child(1) {
-      -webkit-animation-delay: -600ms;
-      animation-delay: -600ms
-    }
-
-    .loader__items-item:nth-child(2) {
-      -webkit-animation-delay: -400ms;
-      animation-delay: -400ms
-    }
-
-    .loader__items-item:nth-child(3) {
-      -webkit-animation-delay: -200ms;
-      animation-delay: -200ms
-    }
-
-    @-webkit-keyframes loader {
-      0%, 80%, 100% {
-        -webkit-transform: scale(0);
-        opacity: 0
-      }
-
-      40% {
-        -webkit-transform: scale(1);
-        opacity: 1
-      }
-    }
-
-    @keyframes loader {
-      0%, 80%, 100% {
-        opacity: 0;
-        transform: scale(0)
-      }
-
-      40% {
-        opacity: 1;
-        transform: scale(1)
-      }
-    }
-
-    .loader__items-paragraph {
-      font-size: 0.875rem;
-      margin-bottom: auto;
-    }
-
-    .wrapper {
-      -moz-flex-flow: column nowrap;
-      -ms-flex-flow: column nowrap;
-      -webkit-flex-flow: column nowrap;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: flex;
-      flex-flow: column nowrap;
-      min-height: 100vh;
-      padding: 1.5rem 1rem;
-    }
-
-    .main {
-      -moz-box-align: center;
-      -moz-box-flex: 1;
-      -moz-flex-flow: column nowrap;
-      -moz-flex: 1 1 auto;
-      -ms-flex-align: center;
-      -ms-flex-flow: column nowrap;
-      -ms-flex: 1 1 auto;
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -webkit-box-flex: 1;
-      -webkit-flex-flow: column nowrap;
-      -webkit-flex: 1 1 auto;
-      align-items: center;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: flex;
-      flex-flow: column nowrap;
-      flex: 1 1 auto;
-    }
-
-    .content {
-      background: #fff;
-      border-radius: 0.25rem;
-      box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.1);
-      font-size: 0.938rem;
-      margin: auto auto 1rem auto;
-      max-width: 28.125rem;
-      padding: 1.5rem;
-      width: 100%;
-    }
-
-    .error {
-      color: #ed2027;
-      margin: 1rem 0 0 0;
-    }
-
-    .reference {
-      color: #686f7a;
-      font-family: monospace;
-      font-size: 0.875rem;
-      margin: 0 auto auto auto;
-    }
-
-    .footer {
-      -moz-box-flex: 0;
-      -moz-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-      -webkit-box-flex: 0;
-      -webkit-flex: 0 0 auto;
-      flex: 0 0 auto;
-      font-size: 0.875rem;
-    }
-  </style>
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='normalize-css'  href='https://torrents.io/theme/assets/css/normalize.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sbasic-css'  href='https://torrents.io/theme/assets/css/sbasic.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fdn-css'  href='https://torrents.io/theme/assets/css/fdn.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='global-css'  href='https://torrents.io/theme/assets/css/global.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='head-foot-css'  href='https://torrents.io/theme/assets/css/head-foot.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='pages-css'  href='https://torrents.io/theme/assets/css/pages.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sites-css'  href='https://torrents.io/theme/assets/css/sites.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='frontpage-css'  href='https://torrents.io/theme/assets/css/frontpage.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='category-css'  href='https://torrents.io/theme/assets/css/category.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='search-css'  href='https://torrents.io/theme/assets/css/search.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='settings-css'  href='https://torrents.io/theme/assets/css/settings.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='das-css'  href='https://torrents.io/theme/assets/css/das.css?ver=5.3.2' type='text/css' media='all' />
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>
+	<script type="dcd15648181d564af39b39a7-text/javascript">
+	var ajaxurl = "https://torrents.io/ajax.php";
+	var siteurl = "https://torrents.io";
+	var searchUrl = "https://search.torrents.io";
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link rel="search" type="application/opensearchdescription+xml" title="Torrents Search" href="/opensearch.xml"/>
+	<link rel="icon" type="image/png" href="https://torrents.io/theme/assets/img/favicon.png">
+	<link rel="canonical" href="https://torrents.io/torrent-racker-list/?download=latest" />
 </head>
 <body>
 
-  <!-- s:wrapper -->
-  <div class="wrapper">
+<header class="header" role="banner">
 
-    <!-- s:main -->
-    <main class="main">
+	<div class="row">
+		<div class="small-12 columns">
+			<a href="https://torrents.io" class="logo"><img src="https://torrents.io/theme/assets/img/logo.png" alt="torrents" /></a>
+		</div>
+	</div><!-- .row -->
 
-      <!-- s:content -->
-      <div class="content">
-        <h1>StackPath</h1>
-        <hr>
-        <h2>Sorry, you have been blocked.</h2>
-        <p>
-          This website is using a security service to protect itself from online attacks. You performed an action that triggered the service and blocked your request.
-        </p>
-      </div>
-      <!-- e:content -->
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="search-bar">
 
-      <!-- s:reference -->
-      <div class="reference">
-        <p>
-          REFERENCE ID<br>
-          <div class="incident-id">6b31d348f5343b2d9c795ae8a6eb1533</div>
-        </p>
-      </div>
-      <!-- e:reference -->
+				<div class="search-nav">
+					<div class="nav-form">
+						<form method="post" action="https://search.torrents.io/" class="nav-search-form">
+							<div class="nav-right">
+								<div class="nav-search-submit">
+									<button type="submit"><i class="fa fa-search" title="search torrents"></i></button>
+								</div>
+							</div>
+							<div class="nav-fill">
+								<div class="nav-search-field"><input type="text" class="nav-search-input" placeholder="search torrents" /></div>
+							</div>
+						</form>
+					</div>
+					<div class="nav-opt-sites hidden-for-small">
+						<ul class="search-sites">
+															<li class="search-site ">
+									<a href="https://search.torrents.io/:torrentseeker" id="2268"
+										data-name="torrentseeker" data-proxy="" >
+										Torrentseeker									</a>
+								</li>
+															<li class="search-site ">
+									<a href="https://search.torrents.io/:torrentz2" id="2530"
+										data-name="torrentz2" data-proxy="https://torrentz2.is" >
+										Torrentz2									</a>
+								</li>
+															<li class="search-site ">
+									<a href="https://search.torrents.io/:zooqle" id="2548"
+										data-name="zooqle" data-proxy="https://zooqle.unblocked.win" >
+										Zooqle									</a>
+								</li>
+													</ul>
+					</div>
+					<div class="button-vpn hidden-for-small"><a href="https://torrents.io/hide-torrent-IP" rel="nofollow" onclick="if (!window.__cfRLUnblockHandlers) return false; ga('send', 'event', 'Link', 'click', 'VPN top searchbar');" data-cf-modified-dcd15648181d564af39b39a7-=""><i class="fa fa-bolt" aria-hidden="true"></i> Get a fast VPN for Torrenting</a></div>
 
-    </main>
-    <!-- e:main -->
+				</div><!-- search-nav -->
 
-    <!-- s:footer -->
-    <footer class="footer">
-      <p>
-        Security services provided by <a href="https://www.stackpath.com/" target="_blank">StackPath</a>
-      </p>
-    </footer>
-    <!-- e:footer -->
+			</div><!-- search-bar -->
+		</div><!-- small-12 -->
+	</div><!-- row -->
 
-  </div>
-  <!-- e:wrapper -->
+	<div class="row show-for-medium-up">
+		<div class="small-12 columns">
+			<div class="top-nav">
+				<nav>
+					<ul>
+						<li><a href="https://torrents.io" title="torrents">Dashboard</a></li>
+						<li><a href="https://torrents.io/sites/" title="torrent sites">Torrent Sites</a></li>
+						<li><a href="https://search.torrents.io/" title="search torrents">Torrent Search</a></li>
+						<li class="show-for-medium-up"><a href="https://torrents.io/proxy/" title="torrent proxy">Proxy</a></li>
+						<li class="show-for-medium-up"><a href="https://torrents.io/tracker-list/" title="torrent tracker list">Tracker List</a></li>
+						<li><a href="https://torrents.io/settings/" class="right settings" title="search settings">Search Settings</a></li>
+					</ul>
+				</nav>
+				<div class="right social-share show-for-large-up">
+					
+				</div>
+
+			</div><!-- top-nav -->
+		</div><!-- small-12 -->
+	</div><!-- row -->
+
+</header><!-- .header -->
+
+<main class="main">
+
+	<div style="padding-top: 100px;text-align: center;font-size: 2em;font-weight: 700;">404. nothing found.</div>
+	<div style="padding: 25px 0 300px 0;text-align: center;font-size: 1em;">Looking for <a href="https://torrents.io/sites">torrent sites</a> or a <a href="https://torrents.io/proxy">torrent proxy</a>?</div>
+	
+</main><!-- main -->
+
+
+
+<div class="footer">
+	<div class="footer-wrap">
+			<div class="row">
+				<div class="small-12 columns"><a href="https://torrents.io" class="title">torrents</a> 2004 – 2020 <span class="url show-for-medium-up">torrents.io<span> + </span>torrents.me<span> + </span>torrents.to</span></div>
+			</div><!-- row -->
+	</div><!-- footer-wrap -->
+</div><!-- footer -->
+
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="dcd15648181d564af39b39a7-|49" defer=""></script></body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js" type="dcd15648181d564af39b39a7-text/javascript"></script>
+<script src="https://torrents.io/theme/assets/js/jquery-ui.min.js" type="dcd15648181d564af39b39a7-text/javascript"></script>
+<script src="https://torrents.io/theme/assets/js/foundation.min.js" type="dcd15648181d564af39b39a7-text/javascript"></script>
+<script src="https://torrents.io/theme/assets/js/foundation.tab.js" type="dcd15648181d564af39b39a7-text/javascript"></script>
+<script type="dcd15648181d564af39b39a7-text/javascript">$(document).foundation();</script>
+<script src="https://torrents.io/theme/assets/js/script.js" type="dcd15648181d564af39b39a7-text/javascript"></script>
+
+<!-- Google Analytics -->
+<script type="dcd15648181d564af39b39a7-text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-137843655-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 
 </body>
-</html> 
+</html>
