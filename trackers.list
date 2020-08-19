@@ -1,155 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Page not found &ndash; Torrents</title>
-	
-<!-- This site is optimized with the Yoast SEO plugin v11.3 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="robots" content="noindex,follow"/>
-<!-- / Yoast SEO plugin. -->
-
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel='stylesheet' id='normalize-css'  href='https://torrents.io/theme/assets/css/normalize.css?ver=5.3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='sbasic-css'  href='https://torrents.io/theme/assets/css/sbasic.css?ver=5.3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='fdn-css'  href='https://torrents.io/theme/assets/css/fdn.css?ver=5.3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='global-css'  href='https://torrents.io/theme/assets/css/global.css?ver=5.3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='head-foot-css'  href='https://torrents.io/theme/assets/css/head-foot.css?ver=5.3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='pages-css'  href='https://torrents.io/theme/assets/css/pages.css?ver=5.3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='sites-css'  href='https://torrents.io/theme/assets/css/sites.css?ver=5.3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='frontpage-css'  href='https://torrents.io/theme/assets/css/frontpage.css?ver=5.3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='category-css'  href='https://torrents.io/theme/assets/css/category.css?ver=5.3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='search-css'  href='https://torrents.io/theme/assets/css/search.css?ver=5.3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='settings-css'  href='https://torrents.io/theme/assets/css/settings.css?ver=5.3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='das-css'  href='https://torrents.io/theme/assets/css/das.css?ver=5.3.2' type='text/css' media='all' />
-<style type="text/css">.broken_link, a.broken_link {
-	text-decoration: line-through;
-}</style>
-	<script type="dcd15648181d564af39b39a7-text/javascript">
-	var ajaxurl = "https://torrents.io/ajax.php";
-	var siteurl = "https://torrents.io";
-	var searchUrl = "https://search.torrents.io";
-	</script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
-	<link rel="search" type="application/opensearchdescription+xml" title="Torrents Search" href="/opensearch.xml"/>
-	<link rel="icon" type="image/png" href="https://torrents.io/theme/assets/img/favicon.png">
-	<link rel="canonical" href="https://torrents.io/torrent-racker-list/?download=latest" />
-</head>
-<body>
-
-<header class="header" role="banner">
-
-	<div class="row">
-		<div class="small-12 columns">
-			<a href="https://torrents.io" class="logo"><img src="https://torrents.io/theme/assets/img/logo.png" alt="torrents" /></a>
-		</div>
-	</div><!-- .row -->
-
-	<div class="row">
-		<div class="small-12 columns">
-			<div class="search-bar">
-
-				<div class="search-nav">
-					<div class="nav-form">
-						<form method="post" action="https://search.torrents.io/" class="nav-search-form">
-							<div class="nav-right">
-								<div class="nav-search-submit">
-									<button type="submit"><i class="fa fa-search" title="search torrents"></i></button>
-								</div>
-							</div>
-							<div class="nav-fill">
-								<div class="nav-search-field"><input type="text" class="nav-search-input" placeholder="search torrents" /></div>
-							</div>
-						</form>
-					</div>
-					<div class="nav-opt-sites hidden-for-small">
-						<ul class="search-sites">
-															<li class="search-site ">
-									<a href="https://search.torrents.io/:torrentseeker" id="2268"
-										data-name="torrentseeker" data-proxy="" >
-										Torrentseeker									</a>
-								</li>
-															<li class="search-site ">
-									<a href="https://search.torrents.io/:torrentz2" id="2530"
-										data-name="torrentz2" data-proxy="https://torrentz2.is" >
-										Torrentz2									</a>
-								</li>
-															<li class="search-site ">
-									<a href="https://search.torrents.io/:zooqle" id="2548"
-										data-name="zooqle" data-proxy="https://zooqle.unblocked.win" >
-										Zooqle									</a>
-								</li>
-													</ul>
-					</div>
-					<div class="button-vpn hidden-for-small"><a href="https://torrents.io/hide-torrent-IP" rel="nofollow" onclick="if (!window.__cfRLUnblockHandlers) return false; ga('send', 'event', 'Link', 'click', 'VPN top searchbar');" data-cf-modified-dcd15648181d564af39b39a7-=""><i class="fa fa-bolt" aria-hidden="true"></i> Get a fast VPN for Torrenting</a></div>
-
-				</div><!-- search-nav -->
-
-			</div><!-- search-bar -->
-		</div><!-- small-12 -->
-	</div><!-- row -->
-
-	<div class="row show-for-medium-up">
-		<div class="small-12 columns">
-			<div class="top-nav">
-				<nav>
-					<ul>
-						<li><a href="https://torrents.io" title="torrents">Dashboard</a></li>
-						<li><a href="https://torrents.io/sites/" title="torrent sites">Torrent Sites</a></li>
-						<li><a href="https://search.torrents.io/" title="search torrents">Torrent Search</a></li>
-						<li class="show-for-medium-up"><a href="https://torrents.io/proxy/" title="torrent proxy">Proxy</a></li>
-						<li class="show-for-medium-up"><a href="https://torrents.io/tracker-list/" title="torrent tracker list">Tracker List</a></li>
-						<li><a href="https://torrents.io/settings/" class="right settings" title="search settings">Search Settings</a></li>
-					</ul>
-				</nav>
-				<div class="right social-share show-for-large-up">
-					
-				</div>
-
-			</div><!-- top-nav -->
-		</div><!-- small-12 -->
-	</div><!-- row -->
-
-</header><!-- .header -->
-
-<main class="main">
-
-	<div style="padding-top: 100px;text-align: center;font-size: 2em;font-weight: 700;">404. nothing found.</div>
-	<div style="padding: 25px 0 300px 0;text-align: center;font-size: 1em;">Looking for <a href="https://torrents.io/sites">torrent sites</a> or a <a href="https://torrents.io/proxy">torrent proxy</a>?</div>
-	
-</main><!-- main -->
-
-
-
-<div class="footer">
-	<div class="footer-wrap">
-			<div class="row">
-				<div class="small-12 columns"><a href="https://torrents.io" class="title">torrents</a> 2004 – 2020 <span class="url show-for-medium-up">torrents.io<span> + </span>torrents.me<span> + </span>torrents.to</span></div>
-			</div><!-- row -->
-	</div><!-- footer-wrap -->
-</div><!-- footer -->
-
-<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="dcd15648181d564af39b39a7-|49" defer=""></script></body>
-</html>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js" type="dcd15648181d564af39b39a7-text/javascript"></script>
-<script src="https://torrents.io/theme/assets/js/jquery-ui.min.js" type="dcd15648181d564af39b39a7-text/javascript"></script>
-<script src="https://torrents.io/theme/assets/js/foundation.min.js" type="dcd15648181d564af39b39a7-text/javascript"></script>
-<script src="https://torrents.io/theme/assets/js/foundation.tab.js" type="dcd15648181d564af39b39a7-text/javascript"></script>
-<script type="dcd15648181d564af39b39a7-text/javascript">$(document).foundation();</script>
-<script src="https://torrents.io/theme/assets/js/script.js" type="dcd15648181d564af39b39a7-text/javascript"></script>
-
-<!-- Google Analytics -->
-<script type="dcd15648181d564af39b39a7-text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-137843655-1', 'auto');
-ga('send', 'pageview');
-</script>
-<!-- End Google Analytics -->
-
-</body>
-</html>
+udp://open.stealth.si:80/announce
+udp://zephir.monocul.us:6969/announce
+udp://tracker.uw0.xyz:6969/announce
+udp://tracker.cyberia.is:6969/announce
+http://tracker.ipv6tracker.ru:80/announce
+udp://tracker.birkenwald.de:6969/announce
+http://tracker.files.fm:6969/announce
+udp://tracker.zum.bi:6969/announce
+http://tracker.nyap2p.com:8080/announce
+udp://opentracker.i2p.rocks:6969/announce
+udp://ipv6.tracker.zerobytes.xyz:16661/announce
+https://tracker.nitrix.me:443/announce
+https://tracker.tamersunion.org:443/announce
+udp://tracker.army:6969/announce
+udp://aaa.army:8866/announce
+https://w.wwwww.wtf:443/announce
+https://tracker.imgoingto.icu:443/announce
+udp://blokas.io:6969/announce
+udp://api.bitumconference.ru:6969/announce
+udp://discord.heihachi.pw:6969/announce
+udp://cutiegirl.ru:6969/announce
+udp://fe.dealclub.de:6969/announce
+udp://ln.mtahost.co:6969/announce
+udp://vibe.community:6969/announce
+http://vpn.flying-datacenter.de:6969/announce
+udp://eliastre100.fr:6969/announce
+udp://retracker.local.msn-net.ru:6969/announce
+udp://chanchan.uchuu.co.uk:6969/announce
+udp://kanal-4.de:6969/announce
+udp://handrew.me:6969/announce
+udp://ultra.zt.ua:6969/announce
+udp://mail.realliferpg.de:6969/announce
+udp://mts.tvbit.co:6969/announce
+udp://edenbridge.org.uk:6969/announce
+udp://adminion.n-blade.ru:6969/announce
+udp://contra.sf.ca.us:6969/announce
+udp://tracker.v6speed.org:6969/announce
+udp://benouworldtrip.fr:6969/announce
+udp://sd-161673.dedibox.fr:6969/announce
+udp://cdn-1.gamecoast.org:6969/announce
+udp://cdn-2.gamecoast.org:6969/announce
+udp://daveking.com:6969/announce
+udp://aruacfilmes.com.br:6969/announce
+udp://bms-hosxp.com:6969/announce
+udp://teamspeak.value-wolf.org:6969/announce
+udp://edu.uifr.ru:6969/announce
+udp://adm.category5.tv:6969/announce
+udp://code2chicken.nl:6969/announce
+udp://forever-tracker.zooki.xyz:6969/announce
+udp://tracker-v6.zooki.xyz:6969/announce
+udp://public.publictracker.xyz:6969/announce
+udp://public-tracker.zooki.xyz:6969/announce
+udp://vps2.avc.cx:7171/announce
+udp://tracker.fileparadise.in:1337/announce
+udp://tracker.skynetcloud.site:6969/announce
+udp://z.mercax.com:53/announce
+http://ipv6-publictracker.zooki.xyz:6969/announce
+https://publictracker.pp.ua:443/announce
+https://atrack-eu-w1.120181311.xyz:443/announce
+https://atrack-us-c1.120181311.xyz:443/announce
+https://atrack-asia-e2.120181311.xyz:443/announce
+https://atrack-asia-s1.120181311.xyz:443/announce
+udp://us-tracker.publictracker.xyz:6969/announce
+https://atrack-sa-e1.120181311.xyz:443/announce
+udp://tracker.torrent.eu.org:451/announce
+udp://retracker.akado-ural.ru:80/announce
+udp://tracker.zerobytes.xyz:1337/announce
+udp://u.wwwww.wtf:1/announce
+udp://tracker.zemoj.com:6969/announce
+udp://gra1.joshkeegan.co.uk:6969/announce
+udp://tracker.vulnix.sh:6969/announce
+udp://engplus.ru:6969/announce
+udp://movies.zsw.ca:6969/announce
+udp://storage.groupees.com:6969/announce
+udp://bubu.mapfactor.com:6969/announce
+udp://nagios.tks.sumy.ua:80/announce
+udp://6ahddutb1ucc3cp.ru:6969/announce
+udp://61626c.net:6969/announce
+udp://47.ip-51-68-199.eu:6969/announce
+http://0205.uptm.ch:6969/announce
+udp://t2.leech.ie:1337/announce
+udp://t1.leech.ie:1337/announce
+udp://publictracker.xyz:6969/announce
+udp://forever.publictracker.xyz:6969/announce
+udp://tracker.publictracker.xyz:6969/announce
+http://tracker1.itzmx.com:8080/announce
+http://tracker.bt4g.com:2095/announce
+http://h4.trakx.nibba.trade:80/announce
+https://trakx.herokuapp.com:443/announce
+udp://inferno.demonoid.is:3391/announce
+udp://tracker.zooki.xyz:6969/announce
+http://tracker3.itzmx.com:6961/announce
+udp://tracker.moeking.me:6969/announce
+http://vps02.net.orel.ru:80/announce
+udp://tracker.beeimg.com:6969/announce
+udp://tracker.shkinev.me:6969/announce
+udp://line-net.ru:6969/announce
+udp://tracker.opentrackr.org:1337/announce
+http://tracker2.itzmx.com:6961/announce
+http://dn42.smrsh.net:6969/announce
+udp://t3.leech.ie:1337/announce
+udp://exodus.desync.com:6969/announce
+udp://tracker0.ufibox.com:6969/announce
+udp://git.vulnix.sh:6969/announce
+udp://drumkitx.com:6969/announce
+http://tracker.anonwebz.xyz:8080/announce
+https://tracker.hama3.net:443/announce
+udp://tracker.ds.is:6969/announce
+http://tracker.gbitt.info:80/announce
+udp://opentor.org:2710/announce
+udp://dpiui.reedlan.com:6969/announce
+udp://tracker-udp.gbitt.info:80/announce
+udp://valakas.rollo.dnsabr.com:2710/announce
+udp://kawaii.social:6969/announce
+udp://ipv4.tracker.harry.lu:80/announce
+http://t.nyaatracker.com:80/announce
+udp://admin.videoenpoche.info:6969/announce
+udp://free1.mchost.cc:26137/announce
+udp://retracker.lanta-net.ru:2710/announce
+udp://tracker.dler.org:6969/announce
+https://1337.abcvg.info:443/announce
+udp://bt1.archive.org:6969/announce
+http://torrenttracker.nwc.acsalaska.net:6969/announce
+udp://koli.services:6969/announce
+udp://tracker.dyne.org:6969/announce
+udp://explodie.org:6969/announce
+udp://rutorrent.frontline-mod.com:6969/announce
+http://rt.tace.ru:80/announce
+udp://retracker.hotplug.ru:2710/announce
+udp://bt2.archive.org:6969/announce
+http://t.overflow.biz:6969/announce
+http://retracker.sevstar.net:2710/announce
+http://bobbialbano.com:6969/announce
+udp://tracker.coppersurfer.tk:6969/announce
+udp://tracker.internetwarriors.net:1337/announce
+udp://p4p.arenabg.ch:1337/announce
+http://p4p.arenabg.com:1337/announce
+udp://9.rarbg.to:2710/announce
+udp://9.rarbg.me:2710/announce
+udp://tracker.tiny-vps.com:6969/announce
+udp://tracker3.itzmx.com:6961/announce
