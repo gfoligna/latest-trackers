@@ -1,0 +1,36 @@
+name: get_tracker_list
+
+on:
+    schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/5 * * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Get latest tracker list and compress
+      run: |
+        bash -c "./trackers.sh . trackers.list"
+        find . -name "*trackers*"
+
+#    - name: Commit files
+#      run: |
+#        git config --local user.email "action@github.com"
+#        git config --local user.name "GitHub Action"
+#        git add trackers.list
+#        git commit -m "New list every day (:"
+#    - name: Push changes
+#      uses: ad-m/github-push-action@master
+#      with:
+#        github_token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v2
+      with:
+      name: trackers.list
+      path: trackers.list
+      retention-days: 1
