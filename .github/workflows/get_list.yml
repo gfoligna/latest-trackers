@@ -28,9 +28,9 @@ jobs:
 #      with:
 #        github_token: ${{ secrets.GITHUB_TOKEN }}
 
-  - name: 'Upload Artifact'
-    uses: actions/upload-artifact@v2
-    with:
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v2
+      with:
       name: trackers.list
       path: trackers.list
       retention-days: 1
