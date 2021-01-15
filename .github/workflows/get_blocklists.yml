@@ -28,14 +28,9 @@ jobs:
       run: | 
         rm -rfv ./blocklists/tmp
 
-    - name: Commit files
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add ./blocklists/i-block.list.gz
-        git commit -m "New list every day (:"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        force: true
+        name: i-block.list.gz
+        path: ./blocklists/i-block.list.gz
+        retention-days: 1
