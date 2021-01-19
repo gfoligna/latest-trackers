@@ -3,7 +3,7 @@ name: get_tracker_list
 on:
     schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '*/5 * * * *'
+    - cron:  '0 * * * *'
 
 jobs:
   build:
@@ -12,10 +12,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Get latest tracker list and compress
+    - name: Get latest tracker list
       run: |
         bash -c "./trackers.sh . trackers.list"
         find . -name "*trackers*"
+        sed -i'' -e 's/$/\n/g' trackers.list
 
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v2
