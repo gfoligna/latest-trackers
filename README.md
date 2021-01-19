@@ -5,6 +5,14 @@
 
 * This simple bash script downloads the latest list of torrent trackers from [torrents.me](https://torrents.me/)
 
+## Usage
+
+```
+$ ./trackers.sh
+Usage: ./trackers.sh <output directory> <filename>
+You have to specify at least its output dir. Default filename is: trackers_`date +%Y%m%d-%H%M`
+```
+
 # Scheduled actions
 DISCLAIMER: GitHub Actions does not have an URI to get the artifact from the latest build, but it is [coming](https://github.com/actions/upload-artifact/issues/21) apparently. Meaning: *You have to go and manually find  the latest build, click and download its artifact*
 ## Trackers list
